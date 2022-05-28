@@ -12,6 +12,7 @@ html {
 
 a {
     text-decoration: none;
+   
 }
 
 header {
@@ -916,6 +917,15 @@ h1 div {
     border: 5%;
     transition: all 1s;
     opacity: 0;
+}
+
+.container-parrafoMachu {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
 }
 
 .container-europa1:hover .imagenEuropa1 {
