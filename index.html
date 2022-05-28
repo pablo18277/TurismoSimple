@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,117 +8,144 @@
     <title>Turismo Simple</title>
     <!-- Probando el Fav Icon como vimos en la clase After -->
     <link rel="shortcut icon" href="images/logoAvion1.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dbc64ec7b6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,100;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,100;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
+
 <body>
-    
-<header>
-   
-   <div class="logoYSlogan"> 
-        <!-- Logo de la agencia de viajes a la izquierda -->
-        <a href="index.html"><img class="logo" src="images/turismoSimpleLogo.png" alt="Logo de la agencia de viajes Turismo Simple"></a>
-        <!-- Slogan -->
-        <h1><div class="nosotros">Nosotros lo armamos</div><div class="vosDisfrutas"><span>, vos disfrutás</span></div></h1>
-    </div>
 
+    <header>
 
-    <!--Barra de navegación con las 5 secciones  -->
-    <nav class="menu">
-        <ul class="menu-container">
-            <li class="menu-container-item">
-                <a class="menu-container-link hvr-underline-from-left" href="mundial2022.html">¡Mundial de Qatar!</a>
-            </li>
-            <li class="menu-container-item">
-                <a class="menu-container-link hvr-underline-from-left" href="paquetes-internacionales.html">Paquetes Internacionales</a> 
-            </li>
-            <li class="menu-container-item">
-                <a class="menu-container-link hvr-underline-from-left" href="paquetes-nacionales.html">Paquetes Nacionales</a>
-            </li>
-            <li class="menu-container-item">
-                <a class="menu-container-link hvr-underline-from-left" href="cruceros.html">Cruceros</a>
-            </li>
-             <li class="menu-container-item">
-                <a class="menu-container-link hvr-underline-from-left" href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-<main class="principal">
-
-<!-- Debajo del Nav y ocupando todo el ancho. Enlace a la sección "Mundial de Qatar" en una foto con imágenes sobre la Copa del Mundo y la Selección Argentina -->
-<section class="container-bannerMundial">
-
-        <div class="logoCopa">
-            <a href="https://www.fifa.com/es/tournaments/mens/worldcup/qatar2022"><img src="images/logoCopa.svg" alt="Copa del Mundo"></a>
+        <div class="logoYSlogan">
+            <!-- Logo de la agencia de viajes a la izquierda -->
+            <a href="index.html"><img class="logo" src="images/turismoSimpleLogo.png"
+                    alt="Logo de la agencia de viajes Turismo Simple"></a>
+            <!-- Slogan -->
+            <h1 id="slogan">
+                <div class="nosotros">Nosotros lo armamos</div>
+                <div class="vosDisfrutas"><span>, vos disfrutás</span></div>
+            </h1>
         </div>
 
-        <div class="container-link">
-            <a class="menu-banner-link" href="mundial2022.html">¡Paquetes Exclusivos Qatar 2022!</a>
+
+        <!--Barra de navegación con las 5 secciones  -->
+        
+            <nav class="menu d-none d-md-block">
+                <ul class="menu-container">
+                    <li class="menu-container-item">
+                        <a class="menu-container-link hvr-underline-from-left" href="mundial2022.html">¡Mundial de
+                            Qatar!</a>
+                    </li>
+                    <li class="menu-container-item">
+                        <a class="menu-container-link hvr-underline-from-left"
+                            href="paquetes-internacionales.html">Paquetes Internacionales</a>
+                    </li>
+                    <li class="menu-container-item">
+                        <a class="menu-container-link hvr-underline-from-left" href="paquetes-nacionales.html">Paquetes
+                            Nacionales</a>
+                    </li>
+                    <li class="menu-container-item">
+                        <a class="menu-container-link hvr-underline-from-left" href="cruceros.html">Cruceros</a>
+                    </li>
+                    <li class="menu-container-item">
+                        <a class="menu-container-link hvr-underline-from-left" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        
+    </header>
+
+    <main class="principal">
+
+        <!-- Debajo del Nav y ocupando todo el ancho. Enlace a la sección "Mundial de Qatar" en una foto con imágenes sobre la Copa del Mundo y la Selección Argentina -->
+        <section class="container-bannerMundial">
+
+            <div class="logoCopa">
+                <a href="https://www.fifa.com/es/tournaments/mens/worldcup/qatar2022"><img src="images/logoCopa.svg"
+                        alt="Copa del Mundo"></a>
+            </div>
+
+            <div class="container-link">
+                <a class="menu-banner-link" href="mundial2022.html">¡Paquetes Exclusivos Qatar 2022!</a>
+            </div>
+
+            <div class="escudoAfa">
+                <a href="https://www.afa.com.ar/es/"><img src="images/escudoafa.svg" alt="Escudo AFA"></a>
+            </div>
+
+        </section>
+
+        <div class="paquetes">
+
+            <!-- A la izquierda. Destinos nacionales -->
+            <section class="container-paquetesNacionales">
+                <div class="container-tituloPaquetesNacionales"><a href="paquetes-nacionales.html">
+                        <h2 class="tituloPaquetes">Paquetes Nacionales</h2>
+                    </a></div>
+                <a href="paquetes-nacionales.html"> <img class="imagen-cataratas" src="images/cataratas.jpg"
+                        alt="Imagen de las Cataratas del Iguazú"></a>
+                <a href="paquetes-nacionales.html"> <img class="imagen-jujuy" src="images/jujuy.jpg"
+                        alt="Imagen de Jujuy"></a>
+            </section>
+            <!-- A la derecha. Destinos internacionales -->
+            <section class="container-paquetesInternacionales">
+                <div class="container-tituloPaquetesInternacionales"><a href="paquetes-internacionales.html">
+                        <h2 class="tituloPaquetes">Paquetes Internacionales</h2>
+                    </a></div>
+                <a href="paquetes-internacionales.html"><img class="imagen-londres" src="images/london.jpg"
+                        alt="Imagen de Tower Bridge"></a>
+                <a href="paquetes-internacionales.html"><img class="imagen-paris" src="images/paris.jpg"
+                        alt="Imagen de París"></a>
+            </section>
+
         </div>
+        <!-- Enlace a la sección  "Cruceros" en una foto alusiva -->
+        <section class="container-crucero">
+            <div class="container-tituloCruceros">
+                <a href="cruceros.html">
+                    <h2 class="tituloPaquetes">Cruceros</h2>
+                </a>
+            </div>
+            <a href="cruceros.html"><img class="imagenPrincipalCrucero" src="images/crucero2.jpg" alt="Crucero"></a>
+            <a href="cruceros.html"><img class="imagenSecundariaCrucero" src="images/crucero.jpg" alt="Crucero 2"></a>
+        </section>
 
-        <div class="escudoAfa">
-            <a href="https://www.afa.com.ar/es/"><img src="images/escudoafa.svg" alt="Escudo AFA"></a>
-        </div>
-   
-</section>
+    </main>
 
-<div class="paquetes">
+    <!-- En el footer Redes sociales y formulario de contacto -->
+    <footer class="menuFooter-container">
+        <nav>
+            <ul class="menuFooter">
+                <li>
+                    <a class="menuFooterLink" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a class="menuFooterLink" href="https://www.instagram.com"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a class="menuFooterLink" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 
-<!-- A la izquierda. Destinos nacionales -->
-<section class="container-paquetesNacionales">
-    <div class="container-tituloPaquetesNacionales"><a href="paquetes-nacionales.html"><h2 class="tituloPaquetes">Paquetes Nacionales</h2></a></div>
-    <a href="paquetes-nacionales.html"> <img class="imagen-cataratas" src="images/cataratas.jpg" alt="Imagen de las Cataratas del Iguazú"></a>
-    <a href="paquetes-nacionales.html"> <img class="imagen-jujuy" src="images/jujuy.jpg" alt="Imagen de Jujuy"></a>
-</section>
-<!-- A la derecha. Destinos internacionales -->
-<section class="container-paquetesInternacionales">
-    <div class="container-tituloPaquetesInternacionales"><a href="paquetes-internacionales.html"><h2 class="tituloPaquetes">Paquetes Internacionales</h2></a></div>
-    <a href="paquetes-internacionales.html"><img class="imagen-londres" src="images/london.jpg" alt="Imagen de Tower Bridge"></a>
-    <a href="paquetes-internacionales.html"><img class="imagen-paris" src="images/paris.jpg" alt="Imagen de París"></a>
-</section>
-
-</div>
-<!-- Enlace a la sección  "Cruceros" en una foto alusiva -->
-<section class="container-crucero">
-    <div class="container-tituloCruceros">
-       <a href="cruceros.html"> <h2 class="tituloPaquetes">Cruceros</h2></a>
-    </div>
-    <a href="cruceros.html"><img class="imagenPrincipalCrucero" src="images/crucero2.jpg" alt="Crucero"></a>
-    <a href="cruceros.html"><img class="imagenSecundariaCrucero" src="images/crucero.jpg" alt="Crucero 2" ></a>
-</section>
-
-</main>
-
-<!-- En el footer Redes sociales y formulario de contacto -->
-<footer class="menuFooter-container">
-<nav >
-    <ul class="menuFooter">
-        <li>
-            <a class="menuFooterLink" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        </li>
-        <li>
-            <a class="menuFooterLink" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-        </li>
-        <li>
-            <a class="menuFooterLink" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-        </li>
-    </ul>
-</nav>
-</footer>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(); <
+        script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity = "sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin = "anonymous" >
+    </script>
+    </script>
 </body>
+
 </html>

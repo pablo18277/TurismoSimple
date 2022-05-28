@@ -2,10 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
-html{
+html {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
@@ -27,13 +27,19 @@ header {
     width: 100%;
     position: fixed;
     z-index: 5;
-      
-    
-}   
+
+
+}
+
 header a {
     text-decoration: none;
     color: hsl(189, 90%, 30%);
-        
+
+}
+
+#slogan {
+    font-size: 3vw;
+    font-size: 3.5vh;
 }
 
 /* EFECTO PARA EL SLOGAN SACADO DE CODEPEN */
@@ -42,43 +48,82 @@ h1 div {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-      }
-  
-  .nosotros {
-    animation: showup 7s linear ;
-  }
-  
-  .vosDisfrutas  {
+}
+
+.nosotros {
+    animation: showup 7s linear;
+}
+
+.vosDisfrutas {
     width: 0;
     animation: reveal 7s forwards;
-  }
-  
-  .vosDisfrutas span {
-    
+}
+
+.vosDisfrutas span {
+
     animation: slidein 7s forwards;
-  }
-  
-  @keyframes showup {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 1; }
-  }
-  
-  @keyframes slidein {
-    0% { margin-left: -800px; }
-    20% { margin-left: -800px; }
-    35% { margin-left: 0; }
-    100% { margin-left: 0; }
-  }
-  
-  @keyframes reveal {
-    0% { opacity: 0; width: 0px; }
-    20% { opacity: 1; width: 0px; }
-    30% { width: 160px; }
-    80% { opacity: 1; }
-    100% { opacity: 1; width: 160px; }
-  }
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 160px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        width: 160px;
+    }
+}
 
 
 /* FIN EFECTO PARA EL SLOGAN */
@@ -89,12 +134,11 @@ h1 div {
     padding: 0;
     width: 80%;
     margin: 0;
-    
-         
+
+
 }
 
-.logoYSlogan
-{
+.logoYSlogan {
     text-decoration: none;
     color: hsl(189, 90%, 30%);
     display: flex;
@@ -103,15 +147,14 @@ h1 div {
     font-size: 1.5vh;
     padding: 0;
     height: 12vh;
-    
-}   
-    
-.menu {
-    width:50%
-    
+
 }
-.menu-container
-{
+
+.menu {
+    width: 50%
+}
+
+.menu-container {
     padding: 0 1px;
     list-style: none;
     display: flex;
@@ -125,8 +168,10 @@ h1 div {
 .menu-container-link {
     font-size: 1.1vw;
 }
-.menu-container-link:hover { color: white;
-    }
+
+.menu-container-link:hover {
+    color: white;
+}
 
 /* USANDO LIBRERIA DE HOVER.CSS */
 .hvr-underline-from-left {
@@ -137,8 +182,9 @@ h1 div {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-  }
-  .hvr-underline-from-left:before {
+}
+
+.hvr-underline-from-left:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -153,15 +199,18 @@ h1 div {
     transition-duration: 0.5s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+}
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
     right: 0;
-  }
+}
 
 
 
 .principal {
-    
+
     /* background-color:hsl(208, 60%, 70%);  */
     background-image: linear-gradient(to bottom, hsl(208, 83%, 25%), hsl(208, 37%, 62%));
     background-size: cover;
@@ -173,7 +222,7 @@ h1 div {
 
 .container-bannerMundial {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     z-index: 1;
     width: 100%;
@@ -181,17 +230,18 @@ h1 div {
     padding-top: 12vh;
     height: 24vh;
     margin: 0%;
-    
+
 }
+
 .container-bannerMundial a {
     text-decoration: none;
     font-size: 4vh;
     color: white;
-    
+
 }
 
-.container-link:hover{
-transform: scale(1.2);
+.container-link:hover {
+    transform: scale(1.2);
 
 }
 
@@ -199,8 +249,9 @@ transform: scale(1.2);
     transition: all 1s;
 }
 
-.menu-banner-link:hover { color: rgb(184, 44, 44);
-    
+.menu-banner-link:hover {
+    color: rgb(184, 44, 44);
+
 }
 
 
@@ -216,13 +267,13 @@ transform: scale(1.2);
 }
 
 .logoCopa:hover {
-    
+
     transform: scale(1.2);
     cursor: pointer;
-      
-    }
 
-.escudoAfa  {
+}
+
+.escudoAfa {
     width: 5%;
     transition: all 1s;
     position: relative;
@@ -230,20 +281,19 @@ transform: scale(1.2);
 }
 
 .escudoAfa img {
-    width:100%;
+    width: 100%;
 }
 
 .escudoAfa:hover {
-    
+
     transform: scale(1.2);
     cursor: pointer;
-    
-      
-    }
 
 
-.paquetes
-{
+}
+
+
+.paquetes {
     display: flex;
     align-items: center;
     gap: 0.1vw;
@@ -254,13 +304,13 @@ transform: scale(1.2);
 .imagen-londres {
     width: 100%;
     height: 35vh;
-    border-radius: 10% 0 0 10% ;
+    border-radius: 10% 0 0 10%;
     transition: all 1s;
-   }
+}
 
 .imagen-londres:hover {
     transform: scale(1.2);
-    border-radius: 10% 10% 10% 10% ;
+    border-radius: 10% 10% 10% 10%;
 }
 
 .imagen-paris {
@@ -283,8 +333,8 @@ transform: scale(1.2);
 }
 
 .container-tituloPaquetesNacionales {
-    
-    width: 100% ;
+
+    width: 100%;
     position: absolute;
     top: 0;
     z-index: 3;
@@ -302,7 +352,7 @@ transform: scale(1.2);
     align-items: center;
     width: 100%;
     position: relative;
-    
+
 }
 
 .container-tituloPaquetesInternacionales {
@@ -314,22 +364,20 @@ transform: scale(1.2);
 
 
 
-.imagen-cataratas 
-{
+.imagen-cataratas {
     width: 100%;
     height: 35vh;
-    border-radius: 10% 0 0 10% ;
+    border-radius: 10% 0 0 10%;
     transition: all 1s;
-    
+
 }
 
 .imagen-cataratas:hover {
     transform: scale(1.2);
-    border-radius: 10% 10% 10% 10% ;
+    border-radius: 10% 10% 10% 10%;
 }
 
-.imagen-jujuy 
-{
+.imagen-jujuy {
     width: 100%;
     height: 35vh;
     border-radius: 0 10% 10% 0;
@@ -338,7 +386,7 @@ transform: scale(1.2);
 
 .imagen-jujuy:hover {
     transform: scale(1.2);
-    border-radius: 10% 10% 10% 10% ;
+    border-radius: 10% 10% 10% 10%;
 }
 
 .imagenMundial2022 {
@@ -348,8 +396,7 @@ transform: scale(1.2);
 
 
 /* PAGINA MUNDIAL 2022 */
-.fondoMundial
-{
+.fondoMundial {
     background-image: url(images/fondoMundial.jpeg);
     background-repeat: no repeat;
     background-attachment: fixed;
@@ -359,25 +406,25 @@ transform: scale(1.2);
 }
 
 .container-paquetesMundial {
-display: flex;
-align-items: center;
-justify-content: space-around;
-gap: 0.1vw;
-position: relative;
-width: 100%;
-height: 80VH;
-flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.1vw;
+    position: relative;
+    width: 100%;
+    height: 80VH;
+    flex-wrap: wrap;
 
 }
 
 .paqueteBronce {
-    
+
     width: 30%;
     height: 50vh;
-    position:absolute;
+    position: absolute;
     left: 5%;
     border-radius: 10% 0 0 10%;
-        }
+}
 
 .imagen-bronce {
     position: absolute;
@@ -393,7 +440,7 @@ flex-wrap: wrap;
     width: 100%;
     height: 100%;
     transition: all 1s;
-   
+
 }
 
 .imagen-Oro {
@@ -402,14 +449,14 @@ flex-wrap: wrap;
     height: 100%;
     border-radius: 0% 10% 10% 0%;
     transition: all 1s;
-  
+
 }
 
 
 .paquetePlata {
-    
+
     height: 50vh;
-    width:30%;
+    width: 30%;
     position: absolute;
 }
 
@@ -419,45 +466,45 @@ flex-wrap: wrap;
     position: absolute;
     right: 5%;
     border-radius: 0% 10% 10% 0%;
-    
+
 }
 
-.container-tituloPaqueteBronce
- {
-    position:absolute;
+.container-tituloPaqueteBronce {
+    position: absolute;
     z-index: 3;
     width: 100%;
     height: auto;
     top: 0;
     left: 0;
-    }
-.container-tituloPaquetePlata{
-
-    position:absolute;
-    z-index: 3;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;   
 }
 
-.container-tituloPaqueteOro{
+.container-tituloPaquetePlata {
 
-    position:absolute;
+    position: absolute;
     z-index: 3;
     width: 100%;
     height: auto;
     top: 0;
-    left: 0;   
+    left: 0;
+}
+
+.container-tituloPaqueteOro {
+
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
 }
 
 
 
 .container-parrafoBronce {
-position: absolute;
-width: 100%;
-height: 100%;
-bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
 }
 
 .parrafoBronce {
@@ -499,10 +546,10 @@ bottom: 0;
 }
 
 .paqueteBronce:hover .tituloPaqueteBronce {
-    
+
     transform: translateY(130px);
     color: hsl(30, 61%, 25%);
-    
+
 }
 
 .container-parrafoPlata {
@@ -510,105 +557,105 @@ bottom: 0;
     width: 100%;
     height: 100%;
     bottom: 0;
-    }
-    
-.parrafoPlata {
-        position: absolute;
-        background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: all 1s;
-        border-radius: 0% 0% 10% 10%;
-        bottom: 0;
-        z-index: 3;
-        padding-top: 40vh;
 }
-    
-.tituloPaquetePlata {
-        text-align: center;
-        font-size: 2vw;
-        color: hsl(0, 0%, 65%);
-        transition: all 1s;
-    
-}
-    
-    
-.paquetePlata:hover .imagen-plata {
-    
-        transform: scale(1.2);
-        cursor: pointer;
-        opacity: 0.3    ;
-        border-radius: 10%;
-}
-    
-    .paquetePlata:hover .parrafoPlata {
-        transform: scale(1.2);
-        opacity: 1;
-        cursor: pointer;
-        border-radius: 10%;
-    }
-    
-    .paquetePlata:hover .tituloPaquetePlata {
-        
-        color: hsl(0, 0%, 30%);
-        transform: translateY(130px);
-        opacity: 1;
-        
-    }
 
-    .container-parrafoOro {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-        }
-        
-        .parrafoOro {
-            position: absolute;
-            background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
-            opacity: 0;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: all 1s;
-            border-radius: 0% 0% 10% 10%;
-            bottom: 0;
-            z-index: 3;
-            padding-top: 40vh;
-        }
-        
-        .tituloPaqueteOro {
-            text-align: center;
-            font-size: 2vw;
-            color: gold;
-            transition: all 1s;
-        
-        }
-        
-        
-        .paqueteOro:hover .imagen-Oro {
-        
-            transform: scale(1.2);
-            cursor: pointer;
-            opacity: 0.3;
-            border-radius: 10%;
-        }
-        
-        .paqueteOro:hover .parrafoOro {
-            transform: scale(1.2);
-            opacity: 1;
-            cursor: pointer;
-            border-radius: 10%;
-        } 
-        
-        .paqueteOro:hover .tituloPaqueteOro {
-            
-            transform: translateY(130px);
-            color: hsl(30, 61%, 25%);
-            
-        }
+.parrafoPlata {
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 1s;
+    border-radius: 0% 0% 10% 10%;
+    bottom: 0;
+    z-index: 3;
+    padding-top: 40vh;
+}
+
+.tituloPaquetePlata {
+    text-align: center;
+    font-size: 2vw;
+    color: hsl(0, 0%, 65%);
+    transition: all 1s;
+
+}
+
+
+.paquetePlata:hover .imagen-plata {
+
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.3;
+    border-radius: 10%;
+}
+
+.paquetePlata:hover .parrafoPlata {
+    transform: scale(1.2);
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.paquetePlata:hover .tituloPaquetePlata {
+
+    color: hsl(0, 0%, 30%);
+    transform: translateY(130px);
+    opacity: 1;
+
+}
+
+.container-parrafoOro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.parrafoOro {
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 1s;
+    border-radius: 0% 0% 10% 10%;
+    bottom: 0;
+    z-index: 3;
+    padding-top: 40vh;
+}
+
+.tituloPaqueteOro {
+    text-align: center;
+    font-size: 2vw;
+    color: gold;
+    transition: all 1s;
+
+}
+
+
+.paqueteOro:hover .imagen-Oro {
+
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.3;
+    border-radius: 10%;
+}
+
+.paqueteOro:hover .parrafoOro {
+    transform: scale(1.2);
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.paqueteOro:hover .tituloPaqueteOro {
+
+    transform: translateY(130px);
+    color: hsl(30, 61%, 25%);
+
+}
 
 /* FIN PÁGINA MUNDIAL*/
 
@@ -618,13 +665,13 @@ bottom: 0;
     padding-top: 1vh;
     padding-bottom: 1vh;
     position: relative;
-    
+
 }
 
 .container-tituloCruceros {
-position: absolute;
-top: 0%;
-z-index: 3;
+    position: absolute;
+    top: 0%;
+    z-index: 3;
 }
 
 
@@ -633,9 +680,10 @@ z-index: 3;
     padding-top: 12vh;
     background-image: linear-gradient(to bottom, hsl(208, 83%, 25%), hsl(208, 37%, 62%));
     height: 100vh;
-    
+
 
 }
+
 /* PÁGINA INTERNACIONALES */
 .fondoInternacionales {
     padding-top: 12vh;
@@ -651,18 +699,32 @@ z-index: 3;
     grid-row-gap: 5px;
     margin-left: 4vw;
     padding: 5px;
-    
+
 }
-    
-    .container-europa1 { grid-area: 1 / 1 / 2 / 4; }
-    .container-europa2 { grid-area: 1 / 5 / 2 / 8; }
-    .container-europa3 { grid-area: 1 / 9 / 2 / 12; }
-    .container-europa4 { grid-area: 2 / 3 / 3 / 6; }
-    .container-europa5 { grid-area: 2 / 7 / 3 / 10; }
+
+.container-europa1 {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.container-europa2 {
+    grid-area: 1 / 5 / 2 / 8;
+}
+
+.container-europa3 {
+    grid-area: 1 / 9 / 2 / 12;
+}
+
+.container-europa4 {
+    grid-area: 2 / 3 / 3 / 6;
+}
+
+.container-europa5 {
+    grid-area: 2 / 7 / 3 / 10;
+}
 
 .containerInternacionales {
     height: 39vh;
-    width:50vh;
+    width: 50vh;
     position: relative;
 
 }
@@ -673,14 +735,14 @@ z-index: 3;
 }
 
 .container-parrafoEuropa {
-    
-    position:relative;
+
+    position: relative;
     z-index: 3;
     width: 100%;
     height: auto;
     top: 0;
-    left: 0;   
-    }
+    left: 0;
+}
 
 .parrafoInternacionales {
     position: relative;
@@ -688,14 +750,14 @@ z-index: 3;
     opacity: 0;
     width: 100%;
     height: 100%;
-    text-align: center  ;
+    text-align: center;
     transition: all 1s;
     border-radius: 0% 0% 10% 10%;
     z-index: 4;
     /* bottom: 0; */
     padding-top: 34vh;
     font-weight: bold;
-}    
+}
 
 
 .imagenEuropa1 {
@@ -717,12 +779,12 @@ z-index: 3;
 
 .container-europa2 {
     border-radius: 5%;
-    
+
 }
 
 .container-tituloPaqueteInternacional {
-    
-    width: 100% ;
+
+    width: 100%;
     position: absolute;
     top: 0;
     z-index: 4;
@@ -745,14 +807,14 @@ z-index: 3;
 }
 
 .container-parrafoUsa {
-    
-    position:relative;
+
+    position: relative;
     z-index: 3;
     width: 100%;
     height: auto;
     top: 0;
-    left: 0;   
-    }
+    left: 0;
+}
 
 .imagenUsa {
     position: absolute;
@@ -784,6 +846,25 @@ z-index: 3;
     transition: all 1s;
 }
 
+.imagenSudesteAsiatico2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5%;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.container-parrafoSudesteAsiatico {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+
 .container-europa4 {
     border-radius: 5%;
 }
@@ -798,6 +879,24 @@ z-index: 3;
 
 }
 
+.imagenRio2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5%;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.container-parrafoRio {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
 .container-europa5 {
     border-radius: 5%;
 }
@@ -810,8 +909,17 @@ z-index: 3;
     transition: all 1s;
 }
 
+.imagenMachu2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5%;
+    transition: all 1s;
+    opacity: 0;
+}
+
 .container-europa1:hover .imagenEuropa1 {
-        
+
     transform: scale(1.2);
     cursor: pointer;
     opacity: 0.1;
@@ -835,7 +943,7 @@ z-index: 3;
 }
 
 .container-europa2:hover .imagenUsa {
-        
+
     transform: scale(1.2);
     cursor: pointer;
     opacity: 0.1;
@@ -859,7 +967,30 @@ z-index: 3;
 }
 
 .container-europa3:hover .imagenSudesteAsiatico {
-        
+
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.3;
+    border-radius: 5%;
+    z-index: 3;
+}
+.container-europa3:hover .imagenSudesteAsiatico2 {
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.3;
+    border-radius: 5%;
+    z-index: 4;
+}
+
+.container-europa3:hover .parrafoInternacionales {
+    transform: scale(1.2);
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.container-europa4:hover .imagenRio {
+
     transform: scale(1.2);
     cursor: pointer;
     opacity: 0.3;
@@ -867,47 +998,84 @@ z-index: 3;
     z-index: 3;
 }
 
+.container-europa4:hover .imagenRio2 {
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.3;
+    border-radius: 5%;
+    z-index: 4;
+}
 
+.container-europa4:hover .parrafoInternacionales {
+    transform: scale(1.2);
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.container-europa5:hover .imagenMachu {
+
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.3;
+    border-radius: 5%;
+    z-index: 3;
+}
+
+.container-europa5:hover .imagenMachu2 {
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.3;
+    border-radius: 5%;
+    z-index: 4;
+}
+
+.container-europa5:hover .parrafoInternacionales {
+    transform: scale(1.2);
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 5%;
+}
 
 
 
 
 
 .fondoCruceros {
-   
+
     padding-top: 12vh;
     background-image: linear-gradient(to bottom, hsl(208, 83%, 25%), hsl(208, 37%, 62%));
-    height: 100vh;    
+    height: 100vh;
 }
 
 .fondoContacto {
     padding-top: 12vh;
     background-image: linear-gradient(to bottom, hsl(208, 83%, 25%), hsl(208, 37%, 62%));
-    height: 100vh;   
+    height: 100vh;
 }
 
-.imagenPrincipalCrucero { 
-height: 33vh;
-border-radius: 10% 0 0 10% ;
-transition: all 1s;
+.imagenPrincipalCrucero {
+    height: 33vh;
+    border-radius: 10% 0 0 10%;
+    transition: all 1s;
 
 }
 
 .imagenPrincipalCrucero:hover {
     transform: scale(1.2);
-    border-radius: 10% 10% 10% 10% ;
+    border-radius: 10% 10% 10% 10%;
 }
 
-.imagenSecundariaCrucero { 
+.imagenSecundariaCrucero {
     height: 33vh;
     border-radius: 0 10% 10% 0;
     transition: all 1s;
-    
+
 }
 
 .imagenSecundariaCrucero:hover {
     transform: scale(1.2);
-    border-radius: 10% 10% 10% 10% ;
+    border-radius: 10% 10% 10% 10%;
 }
 
 footer a {
@@ -915,20 +1083,20 @@ footer a {
     color: hsl(189, 100%, 32%);
 }
 
-.menuFooter-container {   
+.menuFooter-container {
     /* background-color: hsl(208, 100%, 80%); */
     background-image: linear-gradient(to bottom, hsl(208, 83%, 25%), hsl(208, 63%, 38%));
     position: fixed;
     bottom: 0;
-    width: 100%;  
+    width: 100%;
     display: flex;
     height: 8vh;
     align-items: center;
     justify-content: space-around;
-    
+
 }
-.menuFooter
-{
+
+.menuFooter {
     display: flex;
     text-decoration: none;
     list-style: none;
@@ -936,12 +1104,12 @@ footer a {
     justify-content: space-around;
     font-weight: bold;
     font-size: 1.5rem;
-   
+
 }
 
 .menuFooterLink:hover {
-        color: white;
-    }
+    color: white;
+}
 
 .fa-brands {
     font-size: 5vh;
