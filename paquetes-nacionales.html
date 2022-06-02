@@ -1,75 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Turismo Simple</title>
-        <!-- Probando el Fav Icon como vimos en la clase After -->
+
         <link rel="shortcut icon" href="images/logoAvion1.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/dbc64ec7b6.js" crossorigin="anonymous"></script>
     </head>
-    
+
 </head>
 
 
-<body >
+<body>
 
     <header>
-   
-        <div class="logoYSlogan"> 
-             <!-- Logo de la agencia de viajes a la izquierda -->
-             <a href="index.html"><img class="logo" src="images/turismoSimpleLogo.png" alt="Logo de la agencia de viajes Turismo Simple"></a>
-             <!-- Slogan -->
-             <h1><div class="nosotros">Nosotros lo armamos</div><div class="vosDisfrutas"><span>, vos disfrutás</span></div></h1>
-         </div>
-     
-     
-         <!--Barra de navegación con las 5 secciones  -->
-         <nav class="menu">
-             <ul class="menu-container">
-                 <li class="menu-container-item">
-                     <a class="menu-container-link hvr-underline-from-left" href="mundial2022.html">¡Mundial de Qatar!</a>
-                 </li>
-                 <li class="menu-container-item">
-                     <a class="menu-container-link hvr-underline-from-left" href="paquetes-internacionales.html">Paquetes Internacionales</a> 
-                 </li>
-                 <li class="menu-container-item">
-                     <a class="menu-container-link hvr-underline-from-left" href="paquetes-nacionales.html">Paquetes Nacionales</a>
-                 </li>
-                 <li class="menu-container-item">
-                     <a class="menu-container-link hvr-underline-from-left" href="cruceros.html">Cruceros</a>
-                 </li>
-                  <li class="menu-container-item">
-                     <a class="menu-container-link hvr-underline-from-left" href="contacto.html">Contacto</a>
-                 </li>
-             </ul>
-         </nav>
-     </header>
+
+        <div class="logoYSlogan">
+            <!-- Logo de la agencia de viajes a la izquierda -->
+            <a href="index.html"><img class="logo" src="images/turismoSimpleLogo.png"
+                    alt="Logo de la agencia de viajes Turismo Simple"></a>
+            <!-- Slogan -->
+            <h1 id="slogan">
+                <div class="nosotros">Nosotros lo armamos</div>
+                <div class="vosDisfrutas"><span>, vos disfrutás</span></div>
+            </h1>
+        </div>
+
+
+        <!--Barra de navegación con las 5 secciones  -->
+
+        <nav class="menu">
+            <ul class="menu-container">
+                <li class="menu-container-item">
+                    <a class="menu-container-link hvr-underline-from-left" href="mundial2022.html">¡Mundial de
+                        Qatar!</a>
+                </li>
+                <li class="menu-container-item">
+                    <a class="menu-container-link hvr-underline-from-left" href="paquetes-internacionales.html">Paquetes
+                        Internacionales</a>
+                </li>
+                <li class="menu-container-item">
+                    <a class="menu-container-link hvr-underline-from-left" href="paquetes-nacionales.html">Paquetes
+                        Nacionales</a>
+                </li>
+                <li class="menu-container-item">
+                    <a class="menu-container-link hvr-underline-from-left" href="cruceros.html">Cruceros</a>
+                </li>
+                <li class="menu-container-item">
+                    <a class="menu-container-link hvr-underline-from-left" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="btn-group menuOculto">
+            <button type="button" class="btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+                Paquetes
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="paquetes-internacionales.html">Paquetes Internacionales</a>
+                </li>
+                <li><a class="dropdown-item" href="paquetes-nacionales.html">Paquetes
+                        Nacionales</a>
+                <li><a class="dropdown-item" href="cruceros.html">Cruceros</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </header>
 
     <main class="fondoNacionales">
 
-    <h2>Paquetes Nacionales</h2>   
+        <div class="container-fluid">
+            
+            <div class="row contenedorFilaNacionales">
+            <div class="container-imagenNacionales col-sm-3">
+                    <img class="imagenNacionales" src="images/jujuy.jpg" alt="Imagen Jujuy">
+                    <div class="container-tituloPaqueteInternacional">
+                        <a href="#">
+                            <h2 class="tituloPaqueteNacionales">Argentina Norte</h2>
+                        </a>
+                    </div> 
+            </div>
+            <div class="container-imagenNacionales col-sm-3">
+                    <img class="imagenNacionales" src="images/glaciar.jpg" alt="Imagen Glaciar">
+                    <div class="container-tituloPaqueteInternacional">
+                        <a href="#">
+                            <h2 class="tituloPaqueteNacionales">Argentina Sur</h2>
+                        </a>
+                    </div> 
+            </div>
+                   
+            <div class="container-imagenNacionales col-sm-3">
+                    <img class="imagenNacionales" src="images/cataratas.jpg" alt="Imagen Cataratas">
+                    <div class="container-tituloPaqueteInternacional">
+                        <a href="#">
+                            <h2 class="tituloPaqueteNacionales">Cataratas Iguazú</h2>
+                        </a>
+                    </div> 
+                </div>
+
+            <div class="container-imagenNacionales col-sm-3">
+
+                    <img class="imagenNacionales" src="images/mardelplata.jpg" alt="Imagen Mar del Plata">
+                    <div class="container-tituloPaqueteInternacional">
+                        <a href="#">
+                            <h2 class="tituloPaqueteNacionales">Costa Atlántica</h2>
+                        </a>
+                    </div> 
+            </div> 
+            
+        </div>
+
+
 
     </main>
 
     <footer class="menuFooter-container">
-        <nav >
+        <nav>
             <ul class="menuFooter">
                 <li>
                     <a class="menuFooterLink" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
                 </li>
                 <li>
-                    <a class="menuFooterLink" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="menuFooterLink" href="https://www.instagram.com"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </li>
                 <li>
                     <a class="menuFooterLink" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
                 </li>
             </ul>
         </nav>
-        </footer>
-    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

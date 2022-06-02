@@ -22,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    height: 12vh;
+    height: 11vh;
     justify-content: space-between;
     padding-top: 0;
     width: 100%;
@@ -35,8 +35,7 @@ header {
 header a {
     text-decoration: none;
     color: hsl(189, 90%, 30%);
-
-}
+    }
 
 #slogan {
     font-size: 3vw;
@@ -144,15 +143,17 @@ h1 div {
     color: hsl(189, 90%, 30%);
     display: flex;
     align-items: center;
-    width: 50%;
     font-size: 1.5vh;
     padding: 0;
-    height: 12vh;
+    
 
 }
 
+
 .menu {
-    width: 50%
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-container {
@@ -160,10 +161,13 @@ h1 div {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 1 rem;
     font-weight: bold;
+}
+
+.menu-container-item {
+    margin: 0.5rem;
 }
 
 .menu-container-link {
@@ -172,6 +176,25 @@ h1 div {
 
 .menu-container-link:hover {
     color: white;
+}
+
+.menuOculto {
+    display:none;
+    background-color: hsl(189, 90%, 30%);
+    color: whitesmoke;
+    margin-right: 10px;
+    
+}
+
+.btn-group {
+    background-color: hsl(189, 90%, 30%); 
+    
+}
+
+.dropdown-menu {
+    z-index: 100;
+    background-color: hsl(189, 100%, 32%) ;
+    color: aliceblue;
 }
 
 /* USANDO LIBRERIA DE HOVER.CSS */
@@ -228,8 +251,8 @@ h1 div {
     z-index: 1;
     width: 100%;
     background-image: linear-gradient(to right, hsl(300, 94%, 13%), hsl(300, 96%, 21%));
-    padding-top: 12vh;
-    height: 24vh;
+    padding-top: 11vh;
+    height: 23vh;
     margin: 0%;
 
 }
@@ -238,7 +261,7 @@ h1 div {
     text-decoration: none;
     font-size: 4vh;
     color: white;
-
+    
 }
 
 .container-link:hover {
@@ -265,6 +288,7 @@ h1 div {
 
 .logoCopa img {
     width: 100%;
+    height: 100%;
 }
 
 .logoCopa:hover {
@@ -278,7 +302,7 @@ h1 div {
     width: 5%;
     transition: all 1s;
     position: relative;
-    z-index: 5;
+    z-index: 3;
 }
 
 .escudoAfa img {
@@ -343,10 +367,13 @@ h1 div {
 
 .tituloPaquetes {
     text-align: center;
-    font-size: 2vw;
+    font-size: 4vh;
     color: whitesmoke;
 
 }
+
+
+
 
 .container-paquetesInternacionales {
     display: flex;
@@ -681,8 +708,6 @@ h1 div {
     padding-top: 12vh;
     background-image: linear-gradient(to bottom, hsl(208, 83%, 25%), hsl(208, 37%, 62%));
     height: 100vh;
-
-
 }
 
 /* PÁGINA INTERNACIONALES */
@@ -1047,8 +1072,62 @@ h1 div {
     border-radius: 5%;
 }
 
+/* FIN PÁGINA INTERNACIONALES */
+
+/* PÁGINA NACIONALES MAQUETANDO CON BS */
 
 
+
+
+.container-imagenNacionales {
+    height: 45vh;
+    width: 45vh;
+    margin: auto;
+    position: relative;
+    transition: all 1s;
+    
+    
+}
+
+.contenedorFilaNacionales {
+    margin: 50px;
+}
+
+.imagenNacionales {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 0px 1px 2px 0px rgba(26, 24, 24, 0.75);
+    transition: all 1s;
+}
+
+.tituloPaqueteNacionales {
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(227, 214, 214);
+    transition: all 0.5s linear;
+
+}
+
+/* Hovers de nacionales */
+
+.container-imagenNacionales:hover .imagenNacionales {
+
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.3;
+    border-radius: 10%;
+}
+
+
+.container-imagenNacionales:hover .tituloPaqueteNacionales {
+
+        transform: translateY(50px);
+    
+}
+
+/* FIN PÁGINA NACIONALES */
 
 
 .fondoCruceros {
@@ -1114,6 +1193,7 @@ footer a {
     justify-content: space-around;
     font-weight: bold;
     font-size: 1.5rem;
+    margin: 0;
 
 }
 
@@ -1123,4 +1203,29 @@ footer a {
 
 .fa-brands {
     font-size: 5vh;
+}
+
+/* Contacto */
+
+.formulario {
+    height: 80vh;
+    background-color: transparent;
+    color: white;
+
+    }
+
+
+
+/* MEDIAS */
+
+@media screen and (max-width:1170px) {
+
+.menu {
+    display: none;
+}
+
+.menuOculto{
+    display: block;
+}
+
 }
