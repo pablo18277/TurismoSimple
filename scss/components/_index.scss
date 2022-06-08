@@ -1,0 +1,145 @@
+@import "../base/colores";
+
+.principal {
+
+    /* background-color:hsl(208, 60%, 70%);  */
+    background-image: linear-gradient($colorfondo1, hsl(208, 37%, 62%));
+    background-size: cover;
+    
+
+}
+
+
+
+.container-bannerMundial {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    width: 100%;
+    background-image: linear-gradient(to right, hsl(300, 94%, 13%), hsl(300, 96%, 21%));
+    padding-top: 11vh;
+    height: 20vh;
+    margin: 0%;
+
+}
+
+.container-bannerMundial a {
+    text-decoration: none;
+    font-size: 4vh;
+    color: white;
+    
+}
+
+.container-link:hover {
+    transform: scale(1.2);
+
+}
+
+.container-link {
+    transition: all 1s;
+    text-align: center;
+}
+
+.menu-banner-link:hover {
+    color: rgb(184, 44, 44);
+
+}
+
+
+.logoCopa {
+    width: 8vh;
+    transition: all 1s;
+    position: relative;
+    z-index: 3;
+}
+
+.logoCopa img {
+    width: 100%;
+    height: 100%;
+}
+
+.logoCopa:hover {
+
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.escudoAfa {
+    width: 8vh;
+    transition: all 1s;
+    position: relative;
+    z-index: 3;
+}
+
+.escudoAfa img {
+    width: 100%;
+}
+
+.escudoAfa:hover {
+
+    transform: scale(1.2);
+    cursor: pointer;
+
+
+}
+
+
+.paquetes {
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    position: relative;
+        
+}
+
+.imagen-londres {
+    width: 100%;
+    height: 35vh;
+    border-radius: 10% 0 0 10%;
+    transition: all 1s;
+    object-fit: cover;
+}
+
+.imagen-londres:hover {
+    transform: scale(1.2);
+    border-radius: 10% 10% 10% 10%;
+}
+
+.imagen-paris {
+    width: 100%;
+    height: 35vh;
+    border-radius: 0 10% 10% 0;
+    transition: all 1s;
+    object-fit: cover;
+}
+
+.imagen-paris:hover {
+    transform: scale(1.2);
+    border-radius: 10%;
+}
+
+.container-paquetesNacionales {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.container-tituloPaquetesNacionales {
+
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.tituloPaquetes {
+    text-align: center;
+    font-size: 4vh;
+    color: whitesmoke;
+
+}

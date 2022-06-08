@@ -22,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    height: 11vh;
+    height: 9vh;
     justify-content: space-between;
     padding-top: 0;
     width: 100%;
@@ -253,7 +253,7 @@ h1 div {
     width: 100%;
     background-image: linear-gradient(to right, hsl(300, 94%, 13%), hsl(300, 96%, 21%));
     padding-top: 11vh;
-    height: 23vh;
+    height: 20vh;
     margin: 0%;
 
 }
@@ -272,6 +272,7 @@ h1 div {
 
 .container-link {
     transition: all 1s;
+    text-align: center;
 }
 
 .menu-banner-link:hover {
@@ -565,6 +566,7 @@ h1 div {
     bottom: 0;
     z-index: 3;
     padding-top: 40vh;
+    font-weight: bold;
 }
 
 .tituloPaqueteBronce {
@@ -617,6 +619,7 @@ h1 div {
     bottom: 0;
     z-index: 3;
     padding-top: 40vh;
+    font-weight: bold;
 }
 
 .tituloPaquetePlata {
@@ -670,6 +673,7 @@ h1 div {
     bottom: 0;
     z-index: 3;
     padding-top: 40vh;
+    font-weight: bold;
 }
 
 .tituloPaqueteOro {
@@ -1320,10 +1324,10 @@ footer a {
 
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 772px){
 
 .container-bannerMundial a {
-    font-size: 2.5vh;
+    font-size: 3vh;
 }
 
 .nosotros, .vosDisfrutas, .vosDisfrutas span {
@@ -1334,10 +1338,19 @@ footer a {
 
 }
 
-@media (max-width:550px) {
+@media (max-width:552px) {
     .menuFooterLink{
         margin:10px 15px
     }
+
+#slogan {
+    font-size: 2.5vh;
+    
 }
 
+    header
+    {
+        flex-wrap: nowrap;
+    }
+}
 

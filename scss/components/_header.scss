@@ -1,0 +1,218 @@
+@import "../base/colores";
+
+header {
+    /* background-color: hsl(208, 100%, 30%); */
+    /* Buscando cosas del hsl encontré lo de linear gradient y lo quise probar */
+    background-image: linear-gradient(to top right, $colorfondo1, $colorfondo2);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 9vh;
+    justify-content: space-between;
+    padding-top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+
+
+}
+
+header a {
+    text-decoration: none;
+    color: $colorfuente;
+    }
+
+#slogan {
+    font-size: 3vw;
+    font-size: 3.5vh;
+}
+
+/* EFECTO PARA EL SLOGAN SACADO DE CODEPEN */
+
+h1 div {
+    display: inline-block;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+.nosotros {
+    animation: showup 7s linear;
+    
+}
+
+.vosDisfrutas {
+    
+    animation: reveal 7s forwards;
+}
+
+.vosDisfrutas span {
+    width: fit-content;
+    animation: slidein 7s forwards;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 215px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        width: 215px;
+    }
+}
+
+
+/* FIN EFECTO PARA EL SLOGAN */
+
+
+.logo {
+    background-color: transparent;
+    padding: 0;
+    width: 80%;
+    margin: 0;
+
+
+}
+
+.logoYSlogan {
+    text-decoration: none;
+    color: $colorfuente;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+    
+
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container {
+    padding: 0 1px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1 rem;
+    font-weight: bold;
+}
+
+.menu-container-item {
+    margin: 0.5rem;
+}
+
+.menu-container-link {
+    font-size: 1.1vw;
+}
+
+.menu-container-link:hover {
+    color: white;
+}
+
+.menuOculto {
+    display:none;
+    background-color: $colorfuente;
+    color: whitesmoke;
+    margin-right: 10px;
+    
+}
+
+.btn-group {
+    background-color: $colorfuente; 
+    
+}
+
+.dropdown-menu {
+    z-index: 100;
+    background-color: $colorfuente ;
+    color: aliceblue;
+}
+
+/* USANDO LIBRERIA DE HOVER.CSS */
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: white;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+    right: 0;
+}
