@@ -7,7 +7,7 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    height: 9vh;
+    height: 8vh;
     justify-content: space-between;
     padding-top: 0;
     width: 100%;
@@ -20,7 +20,7 @@ header {
 header a {
     text-decoration: none;
     color: $colorfuente;
-    }
+}
 
 #slogan {
     font-size: 3vw;
@@ -31,17 +31,17 @@ header a {
 
 h1 div {
     display: inline-block;
-   white-space: nowrap;
-   overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .nosotros {
     animation: showup 7s linear;
-    
+
 }
 
 .vosDisfrutas {
-    
+
     animation: reveal 7s forwards;
 }
 
@@ -112,13 +112,14 @@ h1 div {
 }
 
 
-/* FIN EFECTO PARA EL SLOGAN */
+// // /* FIN EFECTO PARA EL SLOGAN */
 
 
-.logo {
+.logo img {
     background-color: transparent;
     padding: 0;
-    width: 80%;
+    height: max-content;
+    width: 100%;
     margin: 0;
 
 
@@ -131,7 +132,7 @@ h1 div {
     align-items: center;
     font-size: 1rem;
     padding: 0;
-    
+
 
 }
 
@@ -165,21 +166,21 @@ h1 div {
 }
 
 .menuOculto {
-    display:none;
+    display: none;
     background-color: $colorfuente;
     color: whitesmoke;
     margin-right: 10px;
-    
+
 }
 
 .btn-group {
-    background-color: $colorfuente; 
-    
+    background-color: $colorfuente;
+
 }
 
 .dropdown-menu {
     z-index: 100;
-    background-color: $colorfuente ;
+    background-color: $colorfuente;
     color: aliceblue;
 }
 

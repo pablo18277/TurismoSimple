@@ -2,6 +2,9 @@
 @import "components/header";
 @import "components/footer";
 @import "components/index";
+@import "base/extends";
+@import "components/cruceros";
+@import "components/internacionales";
 
 
 * {
@@ -19,6 +22,11 @@ html {
 a {
     text-decoration: none;
    
+}
+
+body {
+     background-image: linear-gradient($colorfondo1, hsl(208, 37%, 62%));
+     background-size:cover;
 }
 
 
@@ -151,6 +159,7 @@ a {
     position: absolute;
     right: 5%;
     border-radius: 0% 10% 10% 0%;
+    transition: all 0.5s;
     
 
 }
@@ -195,7 +204,7 @@ a {
 
 .parrafoBronce {
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
+    // background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -204,8 +213,9 @@ a {
     border-radius: 0% 0% 10% 10%;
     bottom: 0;
     z-index: 3;
-    padding-top: 40vh;
+    padding-top: 30vh;
     font-weight: bold;
+    color: black;
 }
 
 .tituloPaqueteBronce {
@@ -239,6 +249,8 @@ a {
 
 }
 
+
+
 .container-parrafoPlata {
     position: absolute;
     width: 100%;
@@ -248,7 +260,7 @@ a {
 
 .parrafoPlata {
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
+    // background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -257,8 +269,9 @@ a {
     border-radius: 0% 0% 10% 10%;
     bottom: 0;
     z-index: 3;
-    padding-top: 40vh;
+    padding-top: 30vh;
     font-weight: bold;
+    color: black;
 }
 
 .tituloPaquetePlata {
@@ -274,8 +287,9 @@ a {
 
     transform: scale(1.2);
     cursor: pointer;
-    opacity: 0.3;
+    opacity: 0.2;
     border-radius: 10%;
+    z-index: 3;
 }
 
 .paquetePlata:hover .parrafoPlata {
@@ -302,7 +316,7 @@ a {
 
 .parrafoOro {
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
+    // background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -311,8 +325,9 @@ a {
     border-radius: 0% 0% 10% 10%;
     bottom: 0;
     z-index: 3;
-    padding-top: 40vh;
+    padding-top: 30vh;
     font-weight: bold;
+    color: black;
 }
 
 .tituloPaqueteOro {
@@ -328,7 +343,7 @@ a {
 
     transform: scale(1.2);
     cursor: pointer;
-    opacity: 0.3;
+    opacity: 0.2;
     border-radius: 10%;
 }
 
@@ -355,7 +370,6 @@ a {
     padding-bottom: 1vh;
     position: relative;
     flex-wrap: wrap;
-
 }
 
 .container-tituloCruceros {
@@ -368,391 +382,11 @@ a {
 
 .fondoNacionales {
     padding-top: 12vh;
-    padding-bottom: 35vh;
-    background-image: linear-gradient(to bottom, hsl(208, 83%, 25%), hsl(208, 37%, 62%));
-    background-size: cover;
+    padding-bottom: 30vh;
     
 }
 
-/* PÁGINA INTERNACIONALES */
-.fondoInternacionales {
-    padding-top: 10vh;
-    background-image: linear-gradient(to bottom, hsl(208, 83%, 25%), hsl(208, 37%, 62%));
-    background-size: cover;
-    padding-bottom: 5vh;
-    
-}
 
-.container-Internacionales {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 10px 30px 0 0;
-    /* display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    margin-left: 4vw;
-    padding: 5px; */
-    
-}
-
-/* .container-europa1 {
-    grid-area: 1 / 1 / 2 / 4;
-}
-
-.container-europa2 {
-    grid-area: 1 / 5 / 2 / 8;
-}
-
-.container-europa3 {
-    grid-area: 1 / 9 / 2 / 12;
-}
-
-.container-europa4 {
-    grid-area: 2 / 3 / 3 / 6;
-}
-
-.container-europa5 {
-    grid-area: 2 / 7 / 3 / 10;
-} */
-
-.containerInternacionales {
-    height: 39vh;
-    width: 50vh;
-    position: relative;
-    margin:20px 40px;
-    
-}
-
-.container-europa1 {
-    border-radius: 5%;
-    position: relative;
-}
-
-.container-parrafoEuropa {
-
-    position: relative;
-    z-index: 3;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
-
-.parrafoInternacionales {
-    position: relative;
-    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: all 1s;
-    border-radius: 0% 0% 10% 10%;
-    z-index: 4;
-    /* bottom: 0; */
-    padding-top: 34vh;
-    font-weight: bold;
-}
-
-
-.imagenEuropa1 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: all 1s;
-    object-fit: cover;
-}
-
-.imagenEuropa2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 5%;
-    transition: all 1s;
-    opacity: 0;
-    object-fit: cover;
-}
-
-.container-europa2 {
-    border-radius: 5%;
-
-}
-
-.container-tituloPaqueteInternacional {
-
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 4;
-}
-
-.tituloPaqueteInternacional {
-    text-align: center;
-    font-size: 4vh;
-    color: rgb(227, 214, 214);
-    transition: all 1s;
-
-}
-
-.tituloPaqueteInternacional2 {
-    text-align: center;
-    font-size: 4vh;
-    color: hsl(189, 90%, 30%);
-    transition: all 1s;
-
-}
-
-.container-parrafoUsa {
-
-    position: relative;
-    z-index: 3;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
-
-.imagenUsa {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: all 1s;
-    object-fit: cover;
-}
-
-.imagenUsa2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 5%;
-    transition: all 1s;
-    opacity: 0;
-    object-fit: cover;
-}
-
-.container-europa3 {
-    border-radius: 5%;
-}
-
-.imagenSudesteAsiatico {
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: all 1s;
-    object-fit: cover;
-}
-
-.imagenSudesteAsiatico2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 5%;
-    transition: all 1s;
-    opacity: 0;
-    object-fit: cover;
-}
-
-.container-parrafoSudesteAsiatico {
-    position: relative;
-    z-index: 3;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
-
-
-.container-europa4 {
-    border-radius: 5%;
-}
-
-.imagenRio {
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: all 1s;
-    object-fit: cover;
-
-}
-
-.imagenRio2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 5%;
-    transition: all 1s;
-    opacity: 0;
-    object-fit: cover;
-}
-
-.container-parrafoRio {
-    position: relative;
-    z-index: 9;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
-
-.container-europa5 {
-    border-radius: 5%;
-}
-
-.imagenMachu {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: all 1s;
-    object-fit: cover;
-}
-
-.imagenMachu2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 5%;
-    transition: all 1s;
-    opacity: 0;
-    object-fit: cover;
-}
-
-.container-parrafoMachu {
-    position: relative;
-    z-index: 9;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
-
-.container-europa1:hover .imagenEuropa1 {
-
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.1;
-    border-radius: 5%;
-    z-index: 2;
-}
-
-.container-europa1:hover .parrafoInternacionales {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 5%;
-}
-
-.container-europa1:hover .imagenEuropa2 {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.3;
-    border-radius: 5%;
-    z-index: 4;
-}
-
-.container-europa2:hover .imagenUsa {
-
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.1;
-    border-radius: 10%;
-    z-index: 3;
-}
-
-.container-europa2:hover .imagenUsa2 {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.3;
-    border-radius: 5%;
-    z-index: 4;
-}
-
-.container-europa2:hover .parrafoInternacionales {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 5%;
-}
-
-.container-europa3:hover .imagenSudesteAsiatico {
-
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.3;
-    border-radius: 5%;
-    z-index: 3;
-}
-.container-europa3:hover .imagenSudesteAsiatico2 {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.3;
-    border-radius: 5%;
-    z-index: 4;
-}
-
-.container-europa3:hover .parrafoInternacionales {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 5%;
-}
-
-.container-europa4:hover .imagenRio {
-
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.3;
-    border-radius: 5%;
-    z-index: 3;
-}
-
-.container-europa4:hover .imagenRio2 {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.3;
-    border-radius: 5%;
-    z-index: 4;
-}
-
-.container-europa4:hover .parrafoInternacionales {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 5%;
-    
-}
-
-.container-europa5:hover .imagenMachu {
-
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.3;
-    border-radius: 5%;
-    z-index: 3;
-}
-
-.container-europa5:hover .imagenMachu2 {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.3;
-    border-radius: 5%;
-    z-index: 4;
-}
-
-.container-europa5:hover .parrafoInternacionales {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 5%;
-}
 
 /* FIN PÁGINA INTERNACIONALES */
 
@@ -762,7 +396,7 @@ a {
 
 
 .container-imagenNacionales {
-    height: 45vh;
+    height: 53vh;
     width: 45vh;
     position: relative;
     transition: all 1s;
@@ -791,9 +425,21 @@ a {
 .tituloPaqueteNacionales {
     text-align: center;
     font-size: 4vh;
-    color: rgb(227, 214, 214);
+    color: white;
     transition: all 0.5s linear;
 
+}
+
+.parrafoNacionales {
+    font-weight: bold;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: all 1s linear;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: black;
+    
 }
 
 /* Hovers de nacionales */
@@ -802,7 +448,7 @@ a {
 
     transform: scale(1.2);
     cursor: pointer;
-    opacity: 0.3;
+    opacity: 0.1;
     border-radius: 10%;
 }
 
@@ -813,25 +459,14 @@ a {
     
 }
 
+.container-imagenNacionales:hover .parrafoNacionales {
+    opacity: 2;
+    transform: translateY(-100px);
+}
+
 /* FIN PÁGINA NACIONALES */
 
-/* CRUCEROS */
-.fondoCruceros {
 
-    background-image: url(../images/water-1330252_1920.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 12vh;
-    padding-bottom: 35vh;
-    
-}
-
-.titulocrucero {
-    color: white;
-}
-
-/* FIN CRUCEROS */
 
 .fondoContacto {
     padding-top: 12vh;
@@ -840,7 +475,8 @@ a {
 }
 
 .imagenPrincipalCrucero {
-    height: 33vh;
+    height: 35vh;
+    width: 100%;
     border-radius: 10% 0 0 10%;
     transition: all 1s;
     object-fit: cover;
@@ -853,10 +489,12 @@ a {
 }
 
 .imagenSecundariaCrucero {
-    height: 33vh;
+    height: 35vh;
+    width: 100%;
     border-radius: 0 10% 10% 0;
     transition: all 1s;
     object-fit: cover;
+
 
 }
 
@@ -937,13 +575,13 @@ a {
 
 }
 
-@media (max-width:552px) {
+@media (max-width:636px) {
     .menuFooterLink{
         margin:10px 15px
     }
 
 #slogan {
-    font-size: 2.5vh;
+    display: none;
     
 }
 
@@ -953,3 +591,17 @@ a {
     }
 }
 
+@media (max-width:315px) {
+
+    .container-bannerMundial a {
+        font-size: 2.3vh;
+    }
+
+}
+
+@media (max-width:1016px) {
+    .imagenPrincipalCrucero, .imagenSecundariaCrucero {
+        border-radius: 10% 10% 10% 10%;
+        margin: 3px;
+    }
+}

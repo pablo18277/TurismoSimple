@@ -3,8 +3,8 @@
 .principal {
 
     /* background-color:hsl(208, 60%, 70%);  */
-    background-image: linear-gradient($colorfondo1, hsl(208, 37%, 62%));
-    background-size: cover;
+    // background-image: linear-gradient($colorfondo1, hsl(208, 37%, 62%));
+    // background-size: cover;
     
 
 }
@@ -56,7 +56,7 @@
 
 .logoCopa img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .logoCopa:hover {
@@ -75,6 +75,7 @@
 
 .escudoAfa img {
     width: 100%;
+    height: auto;
 }
 
 .escudoAfa:hover {

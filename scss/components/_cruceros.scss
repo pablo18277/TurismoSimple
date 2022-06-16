@@ -1,0 +1,47 @@
+@import "../base/colores";
+@import "../base/extends";
+
+.container-imagenCruceros {
+    height: 55vh;
+    width: 45vh;
+    @extend %tarjetas;
+}
+
+.container-imagenCruceros:hover .imagenNacionales {
+
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.2;
+    border-radius: 10%;
+}
+
+
+.container-imagenCruceros:hover .tituloPaqueteNacionales {
+
+        transform: translateY(50px);
+    
+}
+
+.container-imagenCruceros:hover .parrafoNacionales {
+    opacity: 2;
+    transform: translateY(-100px);
+    text-align: center;
+}
+.fondoCruceros {
+
+    background-image: url(../images/water-1330252_1920.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+        
+}
+
+.titulocrucero {
+    color: white;
+    z-index: 4;
+    position: relative;
+    top: 0;
+    text-align: center;
+    }

@@ -1,0 +1,9 @@
+@import "../base/colores";
+
+@mixin titulo($alineacion, $tamañofuente, $color, $transition) {
+    text-align: $alineacion;
+    font-size: $tamañofuente;
+    color: $color;
+    transition: $transition;
+}
+
