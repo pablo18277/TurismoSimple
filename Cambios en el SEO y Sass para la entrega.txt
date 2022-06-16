@@ -1,0 +1,18 @@
+Entrega de desafío Sass II+ SEO
+
+Paso a detallar los cambios que hice para esta entrega:
+
+- Hice titles específicos para cada página.
+- Completé todos los meta tags y puse descriptions distintas en cada página.
+- Revisé los Alts e intenté lograr que sean lo más descriptivo posible
+- Redimensioné algunas imágenes (todavía me falta hacerlo en todas las páginas) y actualicé los formatos a webp.
+- Respecto a las correcciones de la última vez, completé el contenido que faltaba y saqué la parte que se rompía en tamaños pequeños para lograr el full responsive. 
+- Seguí agregando partials de Sass y utilicé los Extends y los Mixins como era pretendido.
+
+Me parece que eso sería todo. En el reporte de Lighthouse veo buenos puntajes aunque todavía falta mejorar la performance con el tema de las imágenes que voy a seguir actualizando.
+
+Espero la devolución. Muchas gracias!
+
+Saludos!
+
+Pablo Leal de Ibarra.-
