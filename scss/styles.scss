@@ -5,6 +5,7 @@
 @import "base/extends";
 @import "components/cruceros";
 @import "components/internacionales";
+@import "components/mundial";
 
 
 * {
@@ -27,27 +28,15 @@ a {
 body {
      background-image: linear-gradient($colorfondo1, hsl(208, 37%, 62%));
      background-size:cover;
+     padding-top: 8vh;
+     padding-bottom: 8vh;
 }
 
 
 
 
 
-.container-paquetesInternacionales {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    justify-content: center;
 
-}
-
-.container-tituloPaquetesInternacionales {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 3;
-}
 
 
 
@@ -84,311 +73,19 @@ body {
 }
 
 
-/* PAGINA MUNDIAL 2022 */
-.fondoMundial {
-    background-image: url(../images/fondoMundial.jpeg);
-    background-repeat: no repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 12vh;
-}
-
-.container-paquetesMundial {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 0.1vw;
-    position: relative;
-    width: 100%;
-    height: 80VH;
-    flex-wrap: wrap;
-
-}
-
-.paqueteBronce {
-
-    width: 30%;
-    height: 50vh;
-    position: absolute;
-    left: 5%;
-    border-radius: 10% 0 0 10%;
-    
-}
-
-.imagen-bronce {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10% 0 0 10%;
-    transition: all 1s;
-    z-index: 1;
-    object-fit: cover;
-}
-
-.imagen-plata {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: all 1s;
-    object-fit: cover;
-
-}
-
-.imagen-Oro {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 0% 10% 10% 0%;
-    transition: all 1s;
-    object-fit: cover;
-
-}
-
-
-.paquetePlata {
-
-    height: 50vh;
-    width: 30%;
-    position: absolute;
-    
-}
-
-.paqueteOro {
-    height: 50vh;
-    width: 30%;
-    position: absolute;
-    right: 5%;
-    border-radius: 0% 10% 10% 0%;
-    transition: all 0.5s;
-    
-
-}
-
-.container-tituloPaqueteBronce {
-    position: absolute;
-    z-index: 3;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
-
-.container-tituloPaquetePlata {
-
-    position: absolute;
-    z-index: 3;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
-
-.container-tituloPaqueteOro {
-
-    position: absolute;
-    z-index: 3;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
 
 
 
-.container-parrafoBronce {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-}
-
-.parrafoBronce {
-    position: absolute;
-    // background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: all 1s;
-    border-radius: 0% 0% 10% 10%;
-    bottom: 0;
-    z-index: 3;
-    padding-top: 30vh;
-    font-weight: bold;
-    color: black;
-}
-
-.tituloPaqueteBronce {
-    text-align: center;
-    font-size: 4vh;
-    color: #CD7F32;
-    transition: all 1s;
-
-}
-
-
-.paqueteBronce:hover .imagen-bronce {
-
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.3;
-    border-radius: 10%;
-}
-
-.paqueteBronce:hover .parrafoBronce {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 10%;
-}
-
-.paqueteBronce:hover .tituloPaqueteBronce {
-
-    transform: translateY(130px);
-    color: hsl(30, 61%, 25%);
-
-}
-
-
-
-.container-parrafoPlata {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-}
-
-.parrafoPlata {
-    position: absolute;
-    // background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: all 1s;
-    border-radius: 0% 0% 10% 10%;
-    bottom: 0;
-    z-index: 3;
-    padding-top: 30vh;
-    font-weight: bold;
-    color: black;
-}
-
-.tituloPaquetePlata {
-    text-align: center;
-    font-size: 4vh;
-    color: hsl(0, 0%, 65%);
-    transition: all 1s;
-
-}
-
-
-.paquetePlata:hover .imagen-plata {
-
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.2;
-    border-radius: 10%;
-    z-index: 3;
-}
-
-.paquetePlata:hover .parrafoPlata {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 10%;
-}
-
-.paquetePlata:hover .tituloPaquetePlata {
-
-    color: hsl(0, 0%, 30%);
-    transform: translateY(130px);
-    opacity: 1;
-
-}
-
-.container-parrafoOro {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-}
-
-.parrafoOro {
-    position: absolute;
-    // background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.126) 50%, white);
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: all 1s;
-    border-radius: 0% 0% 10% 10%;
-    bottom: 0;
-    z-index: 3;
-    padding-top: 30vh;
-    font-weight: bold;
-    color: black;
-}
-
-.tituloPaqueteOro {
-    text-align: center;
-    font-size: 4vh;
-    color: gold;
-    transition: all 1s;
-
-}
-
-
-.paqueteOro:hover .imagen-Oro {
-
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.2;
-    border-radius: 10%;
-}
-
-.paqueteOro:hover .parrafoOro {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 10%;
-}
-
-.paqueteOro:hover .tituloPaqueteOro {
-
-    transform: translateY(130px);
-    color: hsl(30, 61%, 25%);
-
-}
-
-/* FIN PÁGINA MUNDIAL*/
-
-.container-crucero {
-    display: flex;
-    justify-content: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    position: relative;
-    flex-wrap: wrap;
-}
-
-.container-tituloCruceros {
-    position: absolute;
-    top: 0%;
-    z-index: 3;
-}
 
 
 
 .fondoNacionales {
-    padding-top: 12vh;
-    padding-bottom: 30vh;
+  
+    padding-bottom: 18vh;
     
 }
 
 
-
-/* FIN PÁGINA INTERNACIONALES */
 
 /* PÁGINA NACIONALES MAQUETANDO CON BS */
 
@@ -472,36 +169,16 @@ body {
     padding-top: 12vh;
     background-image: linear-gradient(to bottom, hsl(208, 83%, 25%), hsl(208, 37%, 62%));
     height: 100vh;
+    padding-bottom: 30vh;
 }
 
-.imagenPrincipalCrucero {
-    height: 35vh;
-    width: 100%;
-    border-radius: 10% 0 0 10%;
-    transition: all 1s;
-    object-fit: cover;
-
+.tituloContacto, .subtituloContacto {
+    color: white;
+    text-align: center;
 }
 
-.imagenPrincipalCrucero:hover {
-    transform: scale(1.2);
-    border-radius: 10% 10% 10% 10%;
-}
-
-.imagenSecundariaCrucero {
-    height: 35vh;
-    width: 100%;
-    border-radius: 0 10% 10% 0;
-    transition: all 1s;
-    object-fit: cover;
 
 
-}
-
-.imagenSecundariaCrucero:hover {
-    transform: scale(1.2);
-    border-radius: 10% 10% 10% 10%;
-}
 
 
 

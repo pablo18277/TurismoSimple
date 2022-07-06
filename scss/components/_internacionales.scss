@@ -4,8 +4,8 @@
 
 
 .fondoInternacionales {
-    padding-top: 10vh;
-    padding-bottom: 5vh;
+    
+    padding-bottom: 9vh;
     
 }
 
@@ -23,26 +23,6 @@
     padding: 5px; */
     
 }
-
-/* .container-europa1 {
-    grid-area: 1 / 1 / 2 / 4;
-}
-
-.container-europa2 {
-    grid-area: 1 / 5 / 2 / 8;
-}
-
-.container-europa3 {
-    grid-area: 1 / 9 / 2 / 12;
-}
-
-.container-europa4 {
-    grid-area: 2 / 3 / 3 / 6;
-}
-
-.container-europa5 {
-    grid-area: 2 / 7 / 3 / 10;
-} */
 
 .containerInternacionales {
     height: 35vh;
@@ -88,16 +68,16 @@
 }
 
 
-.imagenEuropa1 {
+.imagenEuropa1, .imagenUsa, .imagenSudesteAsiatico, .imagenRio, .imagenMachu {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 5%;
     transition: all 1s;
     object-fit: cover;
-}
+  }
 
-.imagenEuropa2 {
+  .imagenEuropa2, .imagenUsa2, .imagenSudesteAsiatico2, .imagenRio2, .imagenMachu2 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -105,9 +85,9 @@
     transition: all 1s;
     opacity: 0;
     object-fit: cover;
-}
+  }
 
-.container-europa2 {
+.container-europa2, .container-europa3, .container-europa4, .container-europa5 {
     border-radius: 5%;
 
 }
@@ -141,48 +121,6 @@
     // left: 0;
 }
 
-.imagenUsa {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: all 1s;
-    object-fit: cover;
-}
-
-.imagenUsa2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 5%;
-    transition: all 1s;
-    opacity: 0;
-    object-fit: cover;
-}
-
-.container-europa3 {
-    border-radius: 5%;
-}
-
-.imagenSudesteAsiatico {
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: all 1s;
-    object-fit: cover;
-}
-
-.imagenSudesteAsiatico2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 5%;
-    transition: all 1s;
-    opacity: 0;
-    object-fit: cover;
-}
 
 .container-parrafoSudesteAsiatico {
     position: absolute;
@@ -194,32 +132,6 @@
 }
 
 
-.container-europa4 {
-    border-radius: 5%;
-}
-
-.imagenRio {
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: all 1s;
-    object-fit: cover;
-
-}
-
-.imagenRio2 {
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    height: 100%;
-    border: 5%;
-    transition: all 1s;
-    opacity: 0;
-    object-fit:fill
-}
-
 .container-parrafoRio {
     position: absolute;
     z-index: 9;
@@ -227,29 +139,6 @@
     height: auto;
     bottom: 0;
     transition: 1s;
-}
-
-.container-europa5 {
-    border-radius: 5%;
-}
-
-.imagenMachu {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    transition: all 1s;
-    object-fit: cover;
-}
-
-.imagenMachu2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 5%;
-    transition: all 1s;
-    opacity: 0;
-    object-fit: cover;
 }
 
 .container-parrafoMachu {
@@ -261,133 +150,37 @@
     transition: 1s;
 }
 
-.container-europa1:hover .imagenEuropa1 {
-
+.container-europa1:hover .imagenEuropa1, .container-europa1:hover .imagenEuropa2 {
     transform: scale(1.2);
     cursor: pointer;
     opacity: 0.1;
     border-radius: 5%;
     z-index: 2;
-}
-
-.container-europa1:hover .parrafoInternacionales {
+  }
+  
+  .container-europa1:hover .parrafoInternacionales, .container-europa2:hover .parrafoInternacionales, .container-europa3:hover .parrafoInternacionales, .container-europa4:hover .parrafoInternacionales, .container-europa5:hover .parrafoInternacionales{
     transform: scale(1.2);
     opacity: 1;
     cursor: pointer;
     border-radius: 5%;
     transform: translateY(-100px);
     font-size: bolder;
-    
-}
-
-.container-europa1:hover .imagenEuropa2 {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.1;
-    border-radius: 5%;
-    z-index: 4;
-}
-
-.container-europa2:hover .imagenUsa {
-
+  }
+  
+  .container-europa2:hover .imagenUsa, .container-europa2:hover .imagenUsa2{
     transform: scale(1.2);
     cursor: pointer;
     opacity: 0.1;
     border-radius: 10%;
     z-index: 3;
-}
-
-.container-europa2:hover .imagenUsa2 {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.1;
-    border-radius: 5%;
-    z-index: 4;
-}
-
-.container-europa2:hover .parrafoInternacionales {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 5%;
-    transform: translateY(-100px);
-    font-size: bolder;
-}
-
-.container-europa3:hover .imagenSudesteAsiatico {
-
+  }
+  
+  .container-europa3:hover .imagenSudesteAsiatico, .container-europa3:hover .imagenSudesteAsiatico2, .container-europa4:hover .imagenRio, .container-europa4:hover .imagenRio2, .container-europa5:hover .imagenMachu, .container-europa5:hover .imagenMachu2{
     transform: scale(1.2);
     cursor: pointer;
     opacity: 0.1;
     border-radius: 5%;
     z-index: 3;
-}
-.container-europa3:hover .imagenSudesteAsiatico2 {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.1;
-    border-radius: 5%;
-    z-index: 4;
-}
+  }
 
-.container-europa3:hover .parrafoInternacionales {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 5%;
-    transform: translateY(-100px);
-    font-size: bolder;
-}
 
-.container-europa4:hover .imagenRio {
-
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.1;
-    border-radius: 5%;
-    z-index: 3;
-}
-
-.container-europa4:hover .imagenRio2 {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.1;
-    border-radius: 5%;
-    z-index: 4;
-}
-
-.container-europa4:hover .parrafoInternacionales {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 5%;
-    transform: translateY(-100px);
-    font-size: bolder;
-    
-}
-
-.container-europa5:hover .imagenMachu {
-
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.1;
-    border-radius: 5%;
-    z-index: 3;
-}
-
-.container-europa5:hover .imagenMachu2 {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 0.3;
-    border-radius: 5%;
-    z-index: 4;
-}
-
-.container-europa5:hover .parrafoInternacionales {
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 5%;
-    transform: translateY(-100px);
-    font-size: bolder;
-}
